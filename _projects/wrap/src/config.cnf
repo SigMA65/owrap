@@ -1,0 +1,24 @@
+## Written by FileProperties.save() at Tue Sep 15 16:18:04 AMST 2009
+#Tue Sep 15 16:18:04 AMST 2009
+
+log4j.rootLogger=trace, file, stdout
+
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.encoding=Cp866
+#log4j.appender.stdout.encoding=Cp1251
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{dd-MM-yyyy HH\:mm\:ss} %5p\:%m%n
+
+log4j.appender.file=org.apache.log4j.FileAppender
+log4j.appender.file.File=wrap.log
+log4j.appender.file.encoding=Cp1251
+log4j.appender.file.Append=true
+log4j.appender.file.layout=org.apache.log4j.PatternLayout
+log4j.appender.file.layout.ConversionPattern=%d{dd-MM-yyyy HH\:mm\:ss} %5p\:%m%n
+
+
+[Wrap]
+wrapPath=D:\\ORA\\10g\\bin\\wrap.exe
+#wrap=d:\\ora\\11g\\client\\bin\\wrap.exe
+
